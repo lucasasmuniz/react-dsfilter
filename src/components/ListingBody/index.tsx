@@ -12,10 +12,14 @@ export default function ListingBody(){
         setProducts(productService.findByPrice(0,Number.MAX_VALUE))
     }, [])
 
+    function handleFilter(minValue:number, maxValue:number){
+        setProducts(productService.findByPrice(minValue,maxValue))
+    }
+
     return(
         <main>
             <section>
-                <Filter />
+                <Filter onFilter={handleFilter}/>
                 <Listing products={products}/>
             </section>
         </main>
