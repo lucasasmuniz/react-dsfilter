@@ -1,0 +1,22 @@
+header{
+    background-color: var(--color-bg-secondary);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-font-primary);
+}
+
+nav h1{
+    font-size: 20px;
+}
+
+nav p{
+    font-size: 12px;
+}

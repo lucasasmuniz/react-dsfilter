@@ -1,0 +1,40 @@
+.filter-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.filter-form input{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-bg-border-primary);
+    font-size: 16px;
+}
+
+.filter-form input:focus{
+    outline: none;
+}
+
+.filter-form input::placeholder{
+    color: var(--color-font-placeholder);
+}
+
+.filter-form button{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    background-color: var(--color-bg-button);
+    border-radius: 5px;
+    color: var(--color-font-primary);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.filter-form button:hover{
+    background-color: var(--color-bg-button-hover);
+    transition: 0.5s;
+}
+
